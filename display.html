@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 표시속성</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* display:inline-block과 함께 사용하는 단골속성 */
+        /* text-align 수평정렬 left center rigiht */
+        /* test-align 인라인요소에만 적용 가능하다 */
+        /* 인라인 자식요소를 가지고 있는 부모 요소에 text-align을 적용해서 수평정렬을 시킨다 */
+        h1 {
+            background-color: yellow;
+            text-align: center;
+        }
+        p {
+            background-color: lightgreen;
+            /* 1. em을 가운데 정렬하고 싶다 */
+            /* 2. em은 인라인이고 그 부모는 p이다 */
+            /* 3. 인라인의 부모 p에게 text-align으로 정렬시킨다 */
+            text-align: right;
+        }
+        p em {background-color: aqua;
+            
+        }
+        .box {background-color: deeppink; text-align: center;}
+        .box li {
+            background-color: royalblue;
+            display:inline-block;
+        }
+        .wrap {background-color: red;}
+        .wrap dt {background-color:skyblue; text-align: right;}
+        .wrap dd {background-color: rebeccapurple; text-align: center;}
+        .wrap dd span {background-color: pink; ;}
+        /* 네이버 우측 로그인 */
+        #login_wrap {background-color: aqua;
+        text-align: center;}
+        #login_wrap p {background-color: blueviolet; text-align: center;}
+        #login_wrap .login {background-color: #03c75a; display: block
+        ; text-align: center;}
+        #login_wrap .id_pw_search_join  {background-color: yellow;}
+        #login_wrap .id_pw_search_join a {background-color: tomato;}
+        /* 복지 */
+        .bnr {background-color: blue; text-align:center;}
+        .bnr .category {background-color:#eef3ff; text-align: center; display: inline-block; }
+        .bnr h2 {background-color: chocolate; text-align: center;}
+        .bnr .contents {background-color: cornflowerblue;text-align: center;}
+        
+    </style>
+</head>
+<body>
+    <h1>block tag</h1>    
+    <p><em>inline tag</em></p>
+    <ul class="box">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>   
+    <dl class="wrap">
+        <dt>제목</dt>
+        <dd><span>내용</span></dd>
+    </dl>
+    <hr>
+    <!-- 네이버 우측 로그인 -->
+    <section id="login_wrap">
+        <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+        <a href="#" class="login">naver 로그인</a>
+        <div class="id_pw_search_join">
+            <a href="#">아이디찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="#">회원가입</a>
+        </div>
+    </section>
+    <hr>
+    <div class="bnr">
+        <p class="category">복지</p>
+        <h2>호텔/콘도/리조트</h2>
+        <p class="contents">
+            회원님만을 위한<br>
+            호텔/콘도/리조트 혜택
+        </p>
+    </div>
+</body>
+</html>
