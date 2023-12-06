@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* 공통 클래스 */
+        .bg {height: 1200px;
+        background-repeat:no-repeat;
+        background-size: 500px auto;
+        background-attachment: fixed;
+        background-size:500px,auto;
+    }
+        
+        /* 개별 클래스 */
+        .bg1 {
+            background-color: blueviolet;
+            width: 900px;
+            background-image: url(./imames/cat.jpg);
+            /* background-position:20px 40%; */
+            /* 시작위치는 무조건 왼쪽 상단부터 */
+        }
+        .bg2 {
+            background-color: chartreuse;
+            width: 1100px;
+            background-image: url(./imames/cat2.jpg);
+            /* background-position:center center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg bg1"><p>내용 내용 내용...</p></div>
+    <div class="bg bg2"><p>내용 내용 내용...</p></div>
+</body>
+</html>

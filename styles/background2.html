@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background2</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body{height: 8000px; 
+            background-color: black;
+            background-image: url(../imames/person.png),url(../imames/space.jpg);
+            background-repeat: no-repeat;
+            background-size: auto,cover ;
+            background-position: 30% center,center 50%;
+            background-attachment: fixed,scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹사이트 이미지 삽입 시 주의사항</h1>
+    <p>
+        *고해상도 이미지 사용 <br>
+        *고해상도 이미지는 이미지 크기가 매우 크기 떄문에 반드시
+        포토샵으로 imge->image size 크기 조정필수!<br>
+        *이미지 크기 조정은 이미지 삽입 요소의 크기에 맞춰서 결정하기<br>
+        *이미지에서 불필요한 영역은 Crop 기능으로 삭제해서 사용하기<br>
+        *이미지 이름은 의미있는 키워드 사용(한글x 특수문자x 대문자x 공백x )<br>
+        *이미지는 반드시 html파일 기준 하위 image 폴더를 만들고 별도관리하기
+    </p>
+</body>
+</html>
