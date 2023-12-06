@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수열 선택자</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .box h1 {background-color: aqua;}
+        .box p:nth-child(2) {background-color: antiquewhite;}
+        .box p:nth-child(3) {background-color: blueviolet;}
+        .box p:nth-child(4) {background-color: green;}
+
+        .box p:nth-of-type(1) {border: 2px solid #000;}
+        .box p:nth-of-type(2) {border: 2px solid #123123;}
+        .box p:nth-of-type(3) {border: 2px solid saddlebrown;}
+
+        .box h1:first-child {color: red;}
+        .box p:first-of-type {color: blue;}
+
+        .box p:nth-last-child(2) {font-size: 2rem;}
+
+        ul {}
+        ul li {
+            border: 1px solid #555;
+            width: 200px; height: 200px;
+            display:inline-block;
+        }
+        ul li:first-child {border-width:5px;}
+        ul li:nth-last-child(4) {border-color:red ;}
+        ul li:nth-child(even) {background-color: violet;}
+        ul li:nth-child(odd) {background-color: burlywood;}
+        ul li:nth-child(4n) {background-color: blue;}
+        ul li:nth-child(4n+2) {background-color: #000 ;}
+        ul li:nth-child(3n) {width: 100px;}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>제목</h1>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <hr>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
