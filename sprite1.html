@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprite-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        ul {}
+        ul .sprite {
+            background-image: url(./imames/icon_set1.png);
+            background-repeat:no-repeat ;
+            width: 24px; height: 24px;
+            text-indent: -9999PX;
+        }
+        ul .sprite:nth-child(1) {}
+        ul .sprite:nth-child(2) {background-position-x:-24px;}
+        ul .sprite:nth-child(3) {background-position-x:-48px;}
+        ul .sprite:nth-child(4) {background-position-x:-72px;}
+        ul .sprite:nth-child(5) {background-position-x:-96px;}
+        ul {}
+        .weather {}
+        .weather li {
+            background-image: url(./imames/icon_set2.png);
+            background-repeat: no-repeat;
+            width: 24px; height: 24px;}
+        .weather .snow {}
+        .weather .rain {background-position-x: -48px;}
+        .weather .lightning {background-position-x: -72px;}
+        .weather .sun {background-position-x: -96px;}
+    </style>
+</head>
+<body>
+    <h1>스프라이트 이미지</h1>
+    <p>작은 이미지들을 쉽게 정리하고 구분하기 위해서 만드는 이미지 방식</p>
+    <p>페이지 로딩속도 단축 ,이미지 관리 간편등</p>
+    <p>img태그 구성x 인라인, 블록요소를 별도로 제작해두고 그대상에 background속성으로 이미지를 관리하는 방식</p>
+    <p><img src="#" alt="대체텍스트"></p>
+    <p>대체텍스트</p>
+    <ul>    
+        <li class="sprite">홈으로</li>
+        <li class="sprite">좋아요</li>
+        <li class="sprite">마이페이지</li>
+        <li class="sprite">장바구니</li>
+        <li class="sprite">알림설정</li>
+    </ul>
+    <ul class="weather">
+        <li class="snow"></li>
+        <li class="rain"></li>
+        <li class="lightning"></li>
+        <li class="sun"></li>
+    </ul>
+</body>
+</html>

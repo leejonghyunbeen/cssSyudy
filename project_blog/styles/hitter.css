@@ -12,4 +12,16 @@ main #hitter tbody {}
 main #hitter tbody tr {}
 main #hitter tbody tr th {}
 main #hitter tbody tr td {padding: 15px;}
+main .hitter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main .hitter .top{}
+main .hitter .top h1 {}
+main .hitter .top span {}
+main .hitter .top span img {border: 3px solid #FF6600;}
+main .hitter .bottom {}
+main .hitter .bottom span {}
+main .hitter .bottom span img {border: 3px solid #FF6600;}
 /* footer */
