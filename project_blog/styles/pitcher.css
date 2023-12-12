@@ -1,1 +1,27 @@
 /* pitcher (투수전용) */
+main #pitcher {
+    background-color: #FF6600 ;
+    width: 85%;
+    margin: 50px auto 0;
+
+}
+main #pitcher thead {border-bottom:3px solid #fff;}
+main #pitcher thead tr {}
+main #pitcher thead tr th {padding: 15PX 15px 15PX 160PX; }
+main #pitcher tbody {}
+main #pitcher tbody tr {}
+main #pitcher tbody tr th {}
+main #pitcher tbody tr td {padding: 15px;}
+main .pitcher {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main .pitcher .top{}
+main .pitcher .top h1 {}
+main .pitcher .top span {}
+main .pitcher .top span img {border: 3px solid #FF6600;}
+main .pitcher .bottom {}
+main .pitcher .bottom span {}
+main .pitcher .bottom span img {border: 3px solid #FF6600;}
+/* footer */

@@ -16,3 +16,5 @@ button {cursor: pointer;}
 table,tr,td,th {border-collapse: collapse;}
 /* html에서 의미적으로 존재하나 css디자인상에선 숨겨야하는 요소에 사용 */
 .skip {display: none;}
+/* font-awesome unicode 전용 클래스 */
+.fa {font-family:'Font Awesome 5 Free','Font Awesome 5 Brands';font-weight: 600;}
