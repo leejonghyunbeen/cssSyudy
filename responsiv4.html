@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 쇼핑몰2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* max-width Desktop -> table ->mobil설계 */
+            main {
+                max-width: 1400px;/* 최대크기제한 1400px */
+                width:calc(100% - 32px);
+                margin: 0 auto; 
+                background-color: aquamarine;
+                display: flex; flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            main a {
+                width:calc(100% / 5 - 80px / 5);
+                margin-bottom: 20px;
+            }
+            main a img {width: 100%; }
+            @media screen and (max-width:1279px) {/* 743~1279 */
+                main a {width:calc(100% / 3 - 40px / 3);}
+            }
+            main a img {width: 100%; }
+            @media screen and (max-width:743px) {/* 320~743 */
+                main a {width:calc(50% - 10px);}
+            }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#"><img src="./images_bird/01.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/02.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/03.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/04.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/05.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/06.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/07.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/08.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/09.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/10.jpg" alt=""></a>
+    </main>
+</body>
+</html>
