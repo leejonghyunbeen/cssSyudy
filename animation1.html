@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션연습1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* transition */
+        .btn1{
+            background-color: aqua; padding: 30px;
+            font-size: 1rem;
+            transition: all 0.5s 2s;
+            /* transition:background-color 2s;
+            transition: padding 2s;
+            transition: font-size 1.5s; */
+        }
+        
+        .btn1:hover {
+            background-color: lime;
+            padding: 60px;
+            font-size: 2rem;}
+            /* transdorm */
+            .box{ 
+                width:100px ; height: 100px;
+                background-color: aquamarine;
+                margin: 10px;
+            }
+            /* 속성:값; */
+            /* 속성:값(값); */
+        .box1 {
+            transform:scaleX(2) ;
+            transform-origin: left bottom ;
+        }  
+        /* scale 뒤에  X or Y 쓰면 그 축만 쓴다 */
+        /* origin 중심 설정 */
+        /* transform은 자식 자손의 요소 까지도 영향을 준다 */
+        .box2 {transform: rotate(60deg);}/* 돌리기 : rotate '단위'deg(각도) */
+        .box3 {transform: skewY(20deg);}/* 기울기 skew  */
+        .box4 {/* transform: translate(100px,50px); */
+            transform: translateX(200px);
+        }   /* translate 요소를 x축 y축으로 이동 */
+        .box5 {transform: scaleY(1.2) translateX(300px); rotate: 60deg;}  
+        .box6 {
+            transform: rotate(120deg) translateX(-150PX) skewX(30deg);
+            transform-origin:left bottom ;
+            
+        }
+    </style>
+</head>
+<body>
+    <button>
+        <ul>
+            <li><button type="button" class="btn1">button</button></li>
+            <li><div class="box box1">A</div></li>
+            <li><div class="box box2">B</div></li>
+            <li><div class="box box3">C</div></li>
+            <li><div class="box box4">D</div></li>
+            <li><div class="box box5">E</div></li>
+            <li><div class="box box6">F</div></li>
+        </ul>
+    </button>
+</body>
+</html>

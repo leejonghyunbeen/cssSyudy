@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <title>애니메이션 연습3</title>
+    <style>
+
+        .bg {
+            background-color: #269c26; position: relative;
+            width: 1000px; height: 700px; margin: 50px auto;
+        }
+        .bg img {width: 200px; position: absolute;
+        }
+        .bg .goal1 {
+            left: 20px; top: 20px;
+        }
+        .bg .goal2 {left: 40%; bottom:20px}
+        .bg .goal3 {right: 20px; top: 20px;}
+        .ball {
+            width: 100px; height: 100px;
+            transform: translate(90px, 139px);
+            animation: bottom500 2s infinite ;
+            position: absolute; z-index: 100;
+        }
+        .ball img {
+            width: 100px; 
+            animation:ballrotate 0.1s linear infinite ;
+            }
+        @keyframes ballrotate{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+        }
+        @keyframes bottom500 {
+            0% {transform: translate(90px,139px);}
+            30% {transform: translate(400px,500px);}
+            60% {transform: translate(800px, 50px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="ball"><img src="./animation_icon/football.png" alt=""></div>    
+        <img src="./animation_icon/goal.png" class="goal1" alt="">
+        <img src="./animation_icon/goal.png" class="goal2" alt="">
+        <img src="./animation_icon/goal.png" class="goal3" alt="">
+    </div>
+</body>
+</html>

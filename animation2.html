@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .ball{            
+            /* animation: right500 2s; */
+            /* animation:right800rotate 1s; */
+            animation: right500 2s ease 3 alternate both; 
+            /* 끝나는곳 :both */
+        }
+        .ball img {width: 100px; height: 100px;
+        animation: right700rotate 2s linear infinite;}
+        /* 애니메이션 호출용 KEYFRAME 생성위치   */
+        @keyframes right800rotate{
+            0%{ transform: rotate(0deg) translateX(0) ;}
+            100%{ transform: rotate(180deg) translateX(800px);}
+        }
+        @keyframes right500 {
+            0%{transform:translateX(0);}
+            100%{transform:translateX(500px);}
+        }
+        @keyframes right700rotate {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"><img src="./animation_icon/football.png" alt=""></div>
+</body>
+</html>
