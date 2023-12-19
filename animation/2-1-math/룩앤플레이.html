@@ -24,31 +24,32 @@
         main #visual #deco .obj {position:absolute;}
 
         main #visual #deco .obj1 {
-            top:170px; left:50%; margin-left:-342px;
+            top:170px; left:50%; margin-left:-342px;  animation: rotate linear 4s infinite alternate;
         }
         main #visual #deco .obj2 {
-            left:0; top:150px;
+            left:0; top:150px; animation: scale 1s linear alternate infinite ;
         }
         main #visual #deco .obj3 {
-            left:100px; top:250px;
+            left:100px; top:250px; animation: rotate linear 2s infinite alternate;
         }
         main #visual #deco .obj4 {
-            left:150px; top:350px;
+            left:150px; top:350px; animation: scale 1s linear alternate infinite ;
         }
+        
         main #visual #deco .obj5 {
-            right:0; top:150px;
+            right:0; top:150px;  animation: rotate linear 1s infinite alternate;
         }
         main #visual #deco .obj6 {
-            right:200px; top:250px;
+            right:200px; top:250px;  animation: rotate linear 1s infinite alternate;
         }
         main #visual #deco .obj7 {
-            right:200px; top:240px;
+            right:200px; top:240px; animation: scale 1s linear alternate infinite ;
         }
         main #visual #deco .obj8 {
-            left:270px; top:440px;
+            left:270px; top:440px;  animation: rotate linear 2s infinite alternate;
         }
         main #visual #deco .obj9 {
-            right:0; top:440px;
+            right:0; top:440px;animation: scale 1s linear alternate infinite;
         }
 
         main #book_center {
@@ -68,8 +69,23 @@
         }
         main .category a.active {background:#26bad7; color:#fff;}
 
-        /* 애니메이션 */
 
+         /*같은값 묶고 한번에 쓰기  */
+        main #visual #deco .obj1 {animation: rotate 10s linear alternate infinite;} 
+        main #visual #deco .obj3 ,
+        main #visual #deco .obj6 {animation: rotate 2s linear alternate infinite;}
+        main #visual #deco .obj5 ,
+        main #visual #deco .obj8 {animation: rotate 2s linear alternate-reverse infinite;}
+
+        /* 애니메이션 */
+        @keyframes scale {
+            0% {transform: scale(1);}
+            100% {transform: scale(1.2);}
+        }
+        @keyframes rotate {
+            0% {transform: rotate(0);}
+            100% {transform: rotate(20deg);}
+        }
     </style>
 </head>
 <body>
