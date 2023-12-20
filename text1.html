@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        ul {width:500px;}
+        ul li {display: flex ; flex-flow: row nowrap; justify-content: space-between;}
+        ul li a {
+            background-color: yellow;
+            width: 70%;
+            white-space: nowrap;/* 줄바꿈안함 */
+            overflow: hidden;/* 넘친글자 숨기기 */
+            text-overflow: ellipsis; /* 밑줄임처리 */
+        }
+        ul li a span{}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제</a>
+            <span>2023-12-25</span>
+        </li>
+    </ul>
+</body>
+</html>
