@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드랑핀터레스트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .container {max-width: 1200px; margin: 100px auto;
+            background-color: #555; display: grid;
+            grid-template-areas: 
+            'item1 item2 item3 '
+            'item4 item5 item6'
+            'item7 item8  item9';
+            grid-template-rows:repeat(3, 250px);
+            grid-template-columns: repeat(3,1fr) 100px;
+        }
+        .container .item {text-align: center; background-color: #eee;
+            border-radius: 15px ; margin: 10px;
+            position: relative;
+        }
+        .container .item1 {grid-area:item1;}
+        .container .item2 {grid-area:item2;}
+        .container .item3 {grid-area:item3;}
+        .container .item4 {grid-area:item4;}
+        .container .item5 {grid-area:item5;}
+        .container .item6 {grid-area:item6;}
+        .container .item7 {grid-area:item7;}
+        .container .item8 {grid-area:item8;}
+        .container .item9 {grid-area:item9;}
+        @media screen and (max-width:1200px){
+            .container {
+            grid-template-areas: 
+            'item1 item2'
+            'item1 item3'
+            'item1 item4'
+            'item5 item6'  
+            'item7 item6'
+            'item8 item6'
+            'item9 item9'
+            ;
+            grid-template-rows:repeat(7, 150px);
+            grid-template-columns: repeat(2,1fr) ; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러줄 맢줄임 처리</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #list {
+            width: 800px;margin: 50px auto 0;
+            display: flex; flex-flow: row nowrap;
+        }
+        #list li {display: flex; flex-flow: column nowrap;}
+        #list li:first-child {margin-right: 20px;}
+        #list li img {width: 100%;}
+        #list li a {background-color: antiquewhite;
+            line-height: 1.7;
+            display:-webkit-box; /* line,box-orient 필수보조속성 */
+            display: -moz-box;
+            display: -o-box;
+            -webkit-line-clamp: 3; /* 한번에 보이는 줄 수 */
+            -moz-line-clamp: 3;
+            -o-line-clamp: 3;
+            -webkit-box-orient: vertical; /* horizontal */
+            -moz-box-orient: vertical;
+            -moz-box-orient: vertical;
+            overflow: hidden;/* 해당 영역안에서만 보이게하는 추가옵션 기능 */
+        }
+        #list li span {padding-top:50px;}
+        /* 
+            CSS3 크로스브라우징 - 안정성을올려주는 브라우저 엔진 명령
+            속성앞에 브라우저에서 올바르게 실행되기 위한 엔진 작성
+            -webkit- 크롬,사파리
+            -moz- 파이어폭스
+            -o- 오페라
+            -ms- 익스플로러 (x)
+        */
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>
+            <img src="https://images.unsplash.com/photo-1529973625058-a665431328fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hyaXN0bWFzfGVufDB8fDB8fHww" alt="">
+            <a href="#">
+                12월 25일은 크리스마스 공휴일입니다!<br>
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스
+            </a>
+            <span>20.100원</span>
+        </li>
+        <li>
+            <img src="https://images.unsplash.com/photo-1529973625058-a665431328fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hyaXN0bWFzfGVufDB8fDB8fHww" alt="">
+            <a href="#">
+                12월 25일은 크리스마스 공휴일입니다!<br>
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스~12월 25일은 크리스마스 공휴일입니다 
+                메리크리스마스
+            </a>
+            <span>20.100원</span>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .container {
+            background-color: aqua; padding: 20px;
+            display:grid;
+            justify-content: center;
+            /* 아이템(자식)크기조절 */
+            /* grid-template-rows: 50px 90px 120px 50px; */
+            grid-template-rows:50px repeat(2,100px) 50px;
+            grid-template-columns: 100px;
+        }
+        .container .item {
+            background-color: blue;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
